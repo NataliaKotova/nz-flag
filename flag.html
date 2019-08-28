@@ -22,7 +22,7 @@
 			background-color:black;
 			color:white;
 		}
-		.fa-flag{
+		.fas fa-flag{
 			color:black;
 		}
 		.nz-flag {
@@ -30,6 +30,7 @@
 			width: 800px;
 			position:relative;
 			font-size:10rem;
+			display:inline-block;
 		}
 
 		.fa-star {
@@ -77,6 +78,55 @@
 			width: 320px;
 			z-index:999;
 		}
+		.vertical-line-red{
+			background: #ff0000;
+  			position: absolute;
+			margin-left: 145px;
+			width: 30px;
+			height: 200px;
+			z-index: 9998;
+		}
+		.diagonal-line-red-top-right {
+			background: #ff0000;
+			position: absolute;
+			margin-top: -50px;
+			margin-left: 265px;
+			width: 10px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(64deg);
+		}
+		.diagonal-line-red-top-left {
+			background: #ff0000;
+			position: absolute;
+			margin-top: -50px;
+			margin-left: 50px;
+			width: 10px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-64deg);
+		}
+		.diagonal-line-red-bottom-left {
+			background: #ff0000;
+			position: absolute;
+			margin-top: 80px;
+			margin-left: 60px;
+			width: 10px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-120deg);
+		}
+		.diagonal-line-red-bottom-right {
+			background: #ff0000;
+			position: absolute;
+			margin-top: 78px;
+			margin-left: 260px;
+			width: 10px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-64deg);
+		}
+		
 		.horizontal-line-white-top{
 			background: white;
 			position: absolute;
@@ -92,14 +142,6 @@
 			height: 20px;
 			width: 320px;
 			z-index:998;
-		}
-		.vertical-line-red{
-			background: #ff0000;
-  			position: absolute;
-			margin-left: 145px;
-			width: 30px;
-			height: 200px;
-			z-index: 998;
 		}
 		.vertical-line-white-left{
 			background: white;
@@ -117,16 +159,7 @@
 			height: 200px;
 			z-index: 997;
 		}
-		.diagonal-line-red {
-			background: #ff0000;
-			position: absolute;
-			margin-top: -50px;
-			margin-left: 265px;
-			width: 10px;
-			height: 160px;
-			z-index: 992;
-			-webkit-transform: rotate(64deg);
-		}
+		
 		.diagonal-line-white-narrow {
 			background: white;
 			position: absolute;
@@ -137,24 +170,126 @@
 			z-index: 992;
 			-webkit-transform: rotate(64deg);
 		}
-		.diagonal-line-white-wide {
+		.diagonal-line-white-top-right-wide {
 			background: white;
 			position: absolute;
 			margin-top: -40px;
 			margin-left: 267px;
-			width: 10px;
+			width: 15px;
 			height: 160px;
 			z-index: 992;
 			-webkit-transform: rotate(64deg);
 		}
-		.topb{
+		.diagonal-line-white-top-left-wide {
+			background: white;
+			position: absolute;
+			margin-top: -35px;
+			margin-left: 50px;
+			width: 15px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-64deg);
+		}
+		.diagonal-line-white-top-left-narrow {
+			background: white;
+			position: absolute;
+			margin-top: -57px;
+			margin-left: 55px;
+			width: 6px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-64deg);
+		}
+		.diagonal-line-white-bottom-left-narrow {
+			background: white;
+			position: absolute;
+			margin-top: 75px;
+			margin-left: 55px;
+			width: 6px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-120deg);
+		}
+		.diagonal-line-white-bottom-left-wide {
+			background: white;
+			position: absolute;
+			margin-top: 95px;
+			margin-left: 55px;
+			width: 15px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-120deg);
+		}
+		.diagonal-line-white-bottom-right-narrow {
+			background: white;
+			position: absolute;
+			margin-top: 64px;
+			margin-left:250px;
+			width: 6px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-64deg);
+		}
+		.diagonal-line-white-bottom-right-wide {
+			background: white;
+			position: absolute;
+			margin-top: 88px;
+			margin-left:250px;
+			width: 15px;
+			height: 160px;
+			z-index: 992;
+			-webkit-transform: rotate(-64deg);
+		}
+		.top-white-horizontal{
 			background: white;
 			position: absolute;
 			height: 50px;
-			width: 800px;
+			width: 810px;
 			margin-top: -50px;
-			margin-left: -3px;
+			margin-left: -10px;
 			z-index: 9999;
+		}
+		.left-white-vertical{
+			background: white;
+			position: absolute;
+			height: 420px;
+			width: 10px;
+			margin-left: -10px;
+			z-index: 9999;
+		}
+		.bottom-blue-horizontal{
+			background: blue;
+			position: absolute;
+			height: 30px;
+			width: 350px;
+			margin-top: 200px;
+			z-index: 9999;
+		}
+		.right-blue-vertical{
+			background: blue;
+			position: absolute;
+			height: 200px;
+			width: 50px;
+			margin-left: 320px;
+			z-index: 9999;
+		}
+		.rus-flag{
+			width:800px;
+			height:400px;
+			background-color: blue;
+			display:inline-block;
+			border:1px solid grey;
+		}
+		.white-line{
+			background-color: white;
+			margin-top:0px;
+			height:133px;
+		}
+		.red-line{
+			background-color: red;
+			margin-top:133px;
+			height:133px;
+			
 		}
 	</style>
 </head>
@@ -163,27 +298,38 @@
 	<div class="rectangle nz-flag" id="nzFlag" style="background-color: blue; width: 800px;">
 		<div class="english-rectangle">
 				<div class="horizontal-line-red"></div>
+				<div class="vertical-line-red"></div>
+				<div class="diagonal-line-red-top-right"></div>
+				<div class="diagonal-line-red-top-left"></div>
+				<div class="diagonal-line-red-bottom-left"></div>
 				<div class="horizontal-line-white-top"></div>
 				<div class="horizontal-line-white-bottom"></div>
-				<div class="vertical-line-red"></div>
 				<div class="vertical-line-white-left"></div>
 				<div class="vertical-line-white-right"></div>
-				<div class="diagonal-line-red"></div>
 				<div class="diagonal-line-white-narrow"></div>
-				<div class="diagonal-line-white-wide"></div>
-				<div class="bgcwdiagredstr"></div>
-				<div class="bgddiagredstr"></div>
-				<div class="bgdwdiagredstr"></div>
-				<div class="topb"></div>
-				<div class="leftb"></div>
-				<div class="rightb"></div>
-				<div class="bottomb"></div>
+				<div class="diagonal-line-white-top-right-wide"></div>
+				<div class="diagonal-line-red-bottom-right"></div>
+				<div class="diagonal-line-white-top-left-wide"></div>
+				<div class="diagonal-line-white-top-left-narrow"></div>
+				<div class="diagonal-line-white-bottom-left-narrow"></div>
+				<div class="diagonal-line-white-bottom-left-wide"></div>
+				<div class="diagonal-line-white-bottom-right-wide"></div>
+				<div class="diagonal-line-white-bottom-right-narrow"></div>
+				<div class="top-white-horizontal"></div>
+				<div class="left-white-vertical"></div>
+				<div class="bottom-blue-horizontal"></div>
+				<div class="right-blue-vertical"></div>
 		</div>
-		<i class="fa fa-star star-one" aria-hidden="true">1</i>
-		<i class="fa fa-star star-two" aria-hidden="true">2</i>
-		<i class="fa fa-star star-three" aria-hidden="true">3</i>
-		<i class="fa fa-star star-four" aria-hidden="true">4</i>
+		<i class="fa fa-star star-one" aria-hidden="true"></i>
+		<i class="fa fa-star star-two" aria-hidden="true"></i>
+		<i class="fa fa-star star-three" aria-hidden="true"></i>
+		<i class="fa fa-star star-four" aria-hidden="true"></i>
 	</div>
+	<div class="rectangle rus-flag" id="rusFlag" width: 800px;">
+		<div class="white-line"></div>
+		<div class="red-line"></div>
+	</div>
+	<br>
 	<!--Two buttons-->
 	<button class="favourite styled" type="button"><i class="fas fa-flag"></i>New Zealand Flag</button>
 	<button class="favourite styled" type="button"><i class="fas fa-flag"></i>Australian Flag</button>
